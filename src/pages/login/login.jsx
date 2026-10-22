@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './login.css'
-import logo from '../../assets/reelora1.png'
+import logo from '../../assets/logo.png'
 import { login,signUp } from '../../firebase'
 import netflix_spinner from '../../assets/netflix_spinner.gif'
 
@@ -26,7 +26,7 @@ setLoading(true)
 
   return (
     loading?<div className="spinner">
-<img src={netflix_spinner} alt='spinner'/>
+<img src={netflix_spinner} alt=''/>
     </div>:
     <div className='login'>
       <img src={logo} alt='login_logo' className='login-logo'/>
@@ -61,7 +61,7 @@ value={password} onChange={(e)=>{setPassword(e.target.value)}}
 <div className='form-switch'>
   {
     signState ==='Sign Up'?  <p>already have account?<span onClick={()=>setSignState('Sign In')}> sign in now</span></p>
-    :<p>New to Reelora? <span onClick={()=>setSignState('Sign Up')}>sign up now</span></p>
+    :<p>New to netflix? <span onClick={()=>setSignState('Sign Up')}>sign up now</span></p>
   }
   
 

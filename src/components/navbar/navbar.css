@@ -68,7 +68,7 @@ width:20px;
     background:#191919;
     padding:18px 22px;
     border-radius:2px;
-    text-decoration:underline;
+   
     z-index:1;
 opacity:0;
  transition:all 1s ease;
@@ -87,6 +87,11 @@ opacity:0;
     background:#141414;
 }
 
+.dropdown{
+    color:rgb(243, 86, 86);
+    text-transform:capitalize;
+   
+}
 @media(max-width:900px){
     .navbar{
         padding:20px 4%;
@@ -97,9 +102,7 @@ display:none;
     .navbar-left{
         height:25px;
     }
-    .navbar-right p{
-   display:none;
-    }
+   
      .navbar-right .icons{
         display:none;
      }
